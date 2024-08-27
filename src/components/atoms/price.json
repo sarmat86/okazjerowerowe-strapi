@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_atoms_prices",
+  "info": {
+    "displayName": "Price",
+    "icon": "priceTag"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "oldPrice": {
+      "type": "decimal"
+    },
+    "deliveryCost": {
+      "type": "decimal"
+    }
+  }
+}

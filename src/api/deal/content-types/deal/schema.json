@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deals",
+  "info": {
+    "singularName": "deal",
+    "pluralName": "deals",
+    "displayName": "deals",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.rwd-image"
+    },
+    "url": {
+      "type": "string"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.price"
+    },
+    "shopName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "stillValid": {
+      "type": "boolean"
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
